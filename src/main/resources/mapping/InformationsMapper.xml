@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.nsu.greywolf.mapper.InformationsMapper">
+  <resultMap id="BaseResultMap" type="cn.edu.nsu.greywolf.pojo.Informations">
+    <id column="informationId" jdbcType="INTEGER" property="informationId" />
+    <result column="informationTitle" jdbcType="VARCHAR" property="informationTitle" />
+    <result column="informationTime" jdbcType="TIMESTAMP" property="informationTime" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="cn.edu.nsu.greywolf.pojo.Informations">
+    <result column="informationContent" jdbcType="LONGVARCHAR" property="informationContent" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    informationId, informationTitle, informationTime
+  </sql>
+  <sql id="Blob_Column_List">
+    informationContent
+  </sql>
+  <select id="selectByExampleWithBLOBs" parameterType="cn.edu.nsu.greywolf.pojo.InformationsExample" resultMap="ResultMapWithBLOBs">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from informations
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExample" parameterType="cn.edu.nsu.greywolf.pojo.InformationsExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from informations
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from informations
+    where informationId = #{informationId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from informations
+    where informationId = #{informationId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="cn.edu.nsu.greywolf.pojo.InformationsExample">
+    delete from informations
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="cn.edu.nsu.greywolf.pojo.Informations">
+    insert into informations (informationId, informationTitle, 
+      informationTime, informationContent
+      )
+    values (#{informationId,jdbcType=INTEGER}, #{informationTitle,jdbcType=VARCHAR}, 
+      #{informationTime,jdbcType=TIMESTAMP}, #{informationContent,jdbcType=LONGVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="cn.edu.nsu.greywolf.pojo.Informations">
+    insert into informations
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="informationId != null">
+        informationId,
+      </if>
+      <if test="informationTitle != null">
+        informationTitle,
+      </if>
+      <if test="informationTime != null">
+        informationTime,
+      </if>
+      <if test="informationContent != null">
+        informationContent,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="informationId != null">
+        #{informationId,jdbcType=INTEGER},
+      </if>
+      <if test="informationTitle != null">
+        #{informationTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="informationTime != null">
+        #{informationTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="informationContent != null">
+        #{informationContent,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="cn.edu.nsu.greywolf.pojo.InformationsExample" resultType="java.lang.Long">
+    select count(*) from informations
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update informations
+    <set>
+      <if test="record.informationId != null">
+        informationId = #{record.informationId,jdbcType=INTEGER},
+      </if>
+      <if test="record.informationTitle != null">
+        informationTitle = #{record.informationTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="record.informationTime != null">
+        informationTime = #{record.informationTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.informationContent != null">
+        informationContent = #{record.informationContent,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExampleWithBLOBs" parameterType="map">
+    update informations
+    set informationId = #{record.informationId,jdbcType=INTEGER},
+      informationTitle = #{record.informationTitle,jdbcType=VARCHAR},
+      informationTime = #{record.informationTime,jdbcType=TIMESTAMP},
+      informationContent = #{record.informationContent,jdbcType=LONGVARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update informations
+    set informationId = #{record.informationId,jdbcType=INTEGER},
+      informationTitle = #{record.informationTitle,jdbcType=VARCHAR},
+      informationTime = #{record.informationTime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.edu.nsu.greywolf.pojo.Informations">
+    update informations
+    <set>
+      <if test="informationTitle != null">
+        informationTitle = #{informationTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="informationTime != null">
+        informationTime = #{informationTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="informationContent != null">
+        informationContent = #{informationContent,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where informationId = #{informationId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="cn.edu.nsu.greywolf.pojo.Informations">
+    update informations
+    set informationTitle = #{informationTitle,jdbcType=VARCHAR},
+      informationTime = #{informationTime,jdbcType=TIMESTAMP},
+      informationContent = #{informationContent,jdbcType=LONGVARCHAR}
+    where informationId = #{informationId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.edu.nsu.greywolf.pojo.Informations">
+    update informations
+    set informationTitle = #{informationTitle,jdbcType=VARCHAR},
+      informationTime = #{informationTime,jdbcType=TIMESTAMP}
+    where informationId = #{informationId,jdbcType=INTEGER}
+  </update>
+</mapper>

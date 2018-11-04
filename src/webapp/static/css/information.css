@@ -1,0 +1,178 @@
+body {
+	font-size: 14px;
+	font-family: Helvetica, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+	color: #333;
+	word-wrap: break-word;
+	text-rendering: auto;
+}
+
+.information-tripe {
+	display: relative;
+	margin: 0px auto;
+	padding-top: 30px;
+	width: 1190px;
+	min-height: 500px;
+}
+
+.info-item-box {
+	width: 780px;
+	background-color: white;
+}
+
+.info-item-right {
+	width: 515px;
+}
+
+.info-item-right-p {
+	width: 515px;
+}
+
+.relevant-info {
+	position: absolute;
+	top: 124px;
+	left: 50%;
+	margin-left: 195px;
+	width: 390px;
+}
+
+.relevant-item {
+	padding-left: 10px;
+	margin-top: 10px;
+	height: 57px;
+	color: #666;
+	line-height: 57px;
+	border: 1px solid #dcdddd;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	/* Old Firefox */
+	cursor: pointer;
+	background-color: white;
+	overflow: hidden;
+}
+
+.relevant-item:hover {
+	color: white;
+	background-color: #5ec16b;
+}
+
+//è¯¦ç»†å†…å®¹
+.infoDetailsLeft {
+	font-size: 14px;
+}
+
+.infoDetails {
+	width: 740px;
+	margin: 20px 10 50px;
+	padding-bottom: 50px;
+	border-bottom: #efefef 3px solid;
+	overflow: hidden;
+	float: left;
+}
+
+.infoDetails h1 {
+	font-size: 24px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.infoDetails p {
+	line-height: 26px;
+}
+
+.infoDetails img {
+	width: 760px;
+	overflow: hidden;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+img {
+	border: none;
+	vertical-align: middle;
+}
+
+#comment {
+	width: 670px;
+	font-size: 12px;
+	line-height: 23px;
+	margin: 0 0 30px;
+	position: relative;
+	padding-top: 50px;
+}
+
+.pub-comment-form {
+	position: relative;
+}
+
+input,
+textarea {
+	border: 1px solid #eee;
+	font-family: Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+	font-size: 14px;
+	color: #999;
+}
+
+input,
+textarea {
+	outline: 0;
+}
+
+.pub-comment-textarea {
+	border: 1px solid #dcdcdc;
+	height: 120px;
+	padding: 10px;
+	line-height: 20px;
+	color: #333;
+	width: 650px;
+}
+
+.pub-comment-btn {
+	text-align: right;
+	padding-top: 10px;
+}
+
+.pub-comment-btn input {
+	margin-left: 20px;
+}
+
+.pub-btn,
+.void-btn {
+	background: #5ec16b;
+	color: #FFF;
+	border-radius: 4px;
+	text-decoration: none;
+	padding: 0 20px;
+	font-size: 14px;
+	line-height: 30px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.pub-comment-alert-bg {
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 142px;
+	position: absolute;
+	z-index: 2;
+	background: #fff;
+	filter: Alpha(Opacity=50, Style=0);
+	opacity: .5;
+}
+
+.pub-comment-alert {
+	position: absolute;
+	left: 10px;
+	margin-top: 10px;
+	/*top: 105px;*/
+	z-index: 3;
+	background-color: #FFFCD2;
+	border: 1px solid #D4D4D4;
+	box-shadow: 3px 3px #E5E5E5;
+	padding: 8px 20px 5px;
+}
+
+.information-class .active {
+	color: #5ec16b;
+}

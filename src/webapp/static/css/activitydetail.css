@@ -1,0 +1,174 @@
+.activitydetail-tripe{
+	margin:0px auto;padding:40px 0px;
+	width:1190px;min-height:700px;
+	font-size:0px;
+}
+.activity-item-box:hover{
+	background-color:white;
+}
+.activitydetail-left{
+	display:inline-block;
+	width:390px;font-size:16px;
+}
+.activitydetail-basic-box{
+	margin:0px;
+	cursor:default;
+}
+.activitydetail-info-box{
+	display:inline-block;
+	padding:0px 20px;
+	width:760px;
+	font-size:14px;
+	overflow:hidden;
+	vertical-align:top;
+}
+.activitydetail-info-h4{
+	padding:20px 0px;
+	font-size:18px;font-weight:400;
+	border-bottom:1px solid #dcdddd;
+}
+.activitydetail-info-detail{
+	padding:20px;
+	width:760px;min-height:350px;
+}
+.activitydetail-info-h5{
+	padding:20px 0px 5px;
+	font-size:14px;font-weight:400;color:#999;
+}
+.activitydetail-info-p{
+	font-size:14px;
+}
+.activitydetail-info-p2{
+	font-size:16px;
+}
+.activitydetail-info-zan-box{
+	padding:40px 0px 20px;
+	height:80px;
+	border-bottom:1px solid #dcdddd;
+}
+.activitydetail-info-zan{
+	position:relative;
+	margin:0px auto;
+	height:80px;width:80px;
+	color:white;text-align:center;line-height:112px;
+	border-radius:80px;
+	-moz-border-radius:80px; /* Old Firefox */
+	background-color:#5ec16b;
+}
+.activitydetail-info-zan i{
+	position:absolute;
+	top:15px;left:25px;
+	display:block;width:30px;height:30px;
+	background-image:url(../images/sprite.png);
+	background-repeat:no;
+	background-position:90px 260px;
+	cursor:pointer;
+}
+.activitydetail-btn{
+	float:left;
+	margin:10px 9px 0px;
+	width:176px;height:40px;
+	text-align:center;color:white;line-height:40px;
+	border-radius:5px;
+	-moz-border-radius:5px; /* Old Firefox */
+	cursor:pointer;
+}
+.activitydetail-join{
+	width:370px;height:40px;
+	background-color:#5ec16b;
+}
+.activitydetail-join:hover{
+	background-color:#2f913c;
+}
+.activitydetail-get{
+	margin-bottom:30px;
+	background-color:#f8b62d;
+}
+.activitydetail-get:hover{
+	background-color:#e1a221;
+}
+.activitydetail-send{
+	margin-bottom:30px;
+	background-color:#5eb9c1;
+}
+.activitydetail-send:hover{
+	background-color:#50a6ae;
+}
+.activity-item-plist{
+	padding:10px 0px 0px 40px;
+	color:#999;
+}
+.activity-item-plist a{
+	color:#5ec16b;
+}
+.activity-item-plist a:hover{
+	text-decoration:underline;
+}
+
+.activity-join-box{
+	margin-top:20px;
+	display:inline-block;
+	font-size:0px;
+	width:390px;min-height:10px;
+}
+.activity-join-box h3{
+	font-weight:600;font-size:18px;
+}
+.activity-join-item{
+	display:inline-block;
+	margin-top:25px;
+	width:65px;height:100px;
+}
+.activity-join-item-mask{
+	margin:5px;
+	width:55px;height:55px;
+	border-radius:55px;
+	-moz-border-radius:55px; /* Old Firefox */
+	background-size:cover;
+	background-position:center;
+}
+.activity-join-item p{
+	text-align:center;font-size:14px;color:#999;
+}
+.show-userdetail{
+	display:none;
+	position:absolute;
+	background-color:white;
+}
+
+.act-time-icon{
+	display:inline-block;
+	margin-left:-20px;margin-right:10px;
+	width:20px;height:20px;
+	background:url(../images/sprite.png) -248px -93px;
+}
+.act-addr-icon{
+	display:inline-block;
+	margin-left:-20px;margin-right:10px;
+	width:20px;height:20px;
+	background:url(../images/sprite.png) -228px -200px;
+}
+.act-cat-icon{
+	display:inline-block;
+	margin-left:-20px;margin-right:10px;
+	width:20px;height:20px;
+	background:url(../images/sprite.png) -150px -230px;
+}
+.act-org-icon{
+	display:inline-block;
+	margin-left:-20px;margin-right:10px;
+	width:20px;height:20px;
+	background:url(../images/sprite.png) -150px -230px;
+}
+.act-p-icon{
+	display:inline-block;
+	margin-left:-20px;margin-right:10px;
+	width:20px;height:20px;
+	background:url(../images/sprite.png) 0px -253px;
+}
+.act-tel-icon{
+	display:inline-block;
+	margin-left:-20px;margin-right:10px;
+	width:20px;height:20px;
+	background:url(../images/sprite.png) -150px -230px;
+}

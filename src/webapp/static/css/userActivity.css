@@ -1,0 +1,117 @@
+.useractivity-title-div {
+	margin-top: 20px;
+	width: 878px;
+	height: 45px;
+	border-bottom: 1px solid #ddd;
+}
+
+.useractivity-title-div a {
+	display: inline-block;
+	padding: 0px 15px;
+	height: 45px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 45px;
+	border-top: 1px solid rgba(221, 221, 221, 0);
+	cursor: pointer;
+}
+
+.useractivity-title-div a:hover,
+.useractivity-title-div-a-activity {
+	padding: 0px 14px!important;
+	border: 1px solid #ddd!important;
+	border-bottom: none!important;
+}
+
+.useractivity-tripe-div {
+	width: 880px;
+}
+
+.useractivity-tripe-item {
+	margin-top: 25px;
+	width: 878px;
+	height: 100px;
+	border: 1px solid #ddd;
+}
+
+.useractivity-tripe-item:hover {
+	background-color: #eee;
+}
+
+.useractivity-tripe-item-image {
+	float: left;
+	width: 146px;
+	height: 100px;
+	background-size: cover;
+	background-position: center;
+	cursor: pointer;
+}
+
+.useractivity-tripe-item h3 {
+	padding: 15px 20px;
+	padding-left: 166px;
+	font-size: 18px;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.useractivity-tripe-item h3:hover {
+	text-decoration: underline;
+}
+
+.useractivity-tripe-item p {
+	display: inline-block;
+	width: 170px;
+	height: 18px;
+	margin: 5px 20px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #999;
+	overflow: hidden;
+}
+
+.useractivity-tripe-item-btnbox {
+	float: right;
+	margin-top: -54px;
+	height: 100px;
+	width: 120px;
+	text-align: right;
+}
+
+.useractivity-tripe-item-btnbox a {
+	padding: 5px 10px;
+	margin-right: 15px;
+	font-size: 16px;
+	line-height: 50px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	/* Old Firefox */
+	cursor: pointer;
+}
+
+.useractivity-orange {
+	color: white;
+	background-color: #ea5514;
+}
+
+.useractivity-orange:hover {
+	background-color: #ea1414;
+}
+
+.useractivity-othercolor {
+	color: white;
+	background-color: #5eb9c1;
+}
+
+.useractivity-othercolor:hover {
+	background-color: #379ea7;
+}
+
+.useractivity-green {
+	color: white;
+	background-color: #5ec16b;
+}
+
+.useractivity-green:hover {
+	background-color: #40a74d;
+}

@@ -1,0 +1,105 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	background: radial-gradient(circle, #607B8B, #FFFFFF);
+}
+
+.top-wrap {
+	width: 100%;
+	height: 50px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.top-wrap .logout-div {
+	padding-right: 50px;
+	text-align: right;
+	font-size: small;
+}
+
+
+.top-wrap .span-title {
+	font-weight: 800;
+	font-size: larger;
+}
+
+.logout-div{
+	margin-top: -15px;
+}
+
+.logout-div button{
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+
+
+.main-wrap {
+	margin-top: 5px;
+	height: 100%;
+	width: 100% auto;
+	overflow: hidden;
+}
+
+.main-left-wrap {
+	float: left;
+	height: 550px;
+	width: 12%;
+	border: 1px solid #FCFCFC;
+}
+
+.main-left-wrap ui,li {
+	list-style: none;
+	cursor: pointer;
+}
+
+.main-left-wrap li li:hover{
+	color: darkseagreen;
+}
+
+.main-left-wrap .group-manage-menu {
+	padding: 0px;
+	margin: 0px;
+}
+
+.main-left-wrap .group-manage-item {
+	width: 100%;
+	font-size: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid gainsboro;
+}
+
+.main-left-wrap .group-manage-item a {
+	padding-left: 20px;
+}
+
+.main-left-wrap .group-manage-item a:hover {
+	color: darkseagreen;
+}
+
+.item-actived{
+	color: darkseagreen;
+}
+
+.main-left-wrap ul ul li {
+	font-size: small;
+}
+
+.main-right-wrap {
+	margin-left: 10px;
+	float: left;
+	height: 550px;
+	width: 85%;
+	border: 1px solid #FCFCFC;
+}
+
+.main-right-wrap .main-right-content {
+	width: 100%;
+	height: 100%;
+}

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+    <context id="DB2Tables" targetRuntime="MyBatis3">
+        <commentGenerator>
+            <!-- 抑制警告 -->
+            <property name="suppressTypeWarnings" value="true"/>
+            <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+            <property name="suppressAllComments" value="true"/>
+            <!-- 是否生成注释代时间戳-->
+            <property name="suppressDate" value="true"/>
+        </commentGenerator>
+        <!--  数据库连接  -->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/volunteerPlatform?characterEncoding=utf-8"
+                        userId="root"
+                        password="123456">
+        </jdbcConnection>
+
+        <javaTypeResolver>
+            <!-- 默认false，把JDBC DECIMAL 和 NUMERIC 类型解析为 Integer true，把JDBC DECIMAL 和
+            NUMERIC 类型解析为java.math.BigDecimal -->
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <!--  指定pojo生成位置  -->
+        <javaModelGenerator targetPackage="cn.edu.nsu.greywolf.pojo" targetProject="./src/main/java">
+            <!-- enableSubPackages:是否让schema作为包的后缀 -->
+            <property name="enableSubPackages" value="true"/>
+            <!-- 是否针对string类型的字段在set的时候进行trim调用 -->
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <!--  指定sql映射文件生成的位置 -->
+        <sqlMapGenerator targetPackage="mapping" targetProject="./src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <!--  指定pojo接口生成的位置  -->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="cn.edu.nsu.greywolf.mapper"
+                             targetProject="./src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+        <!--  指定每个表的生成策略  -->
+        <!--  tableName 表名 domainObjectName pojo类名-->
+
+        <!--用户表,志愿者表,组织管理者表-->
+        <!--<table tableName="users" domainObjectName="Users">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="volunteers" domainObjectName="Volunteers">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="organizers" domainObjectName="Organizers">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+
+        <!--组织,组织类型表,活动,活动类型表,评论表,资讯表-->
+        <table tableName="orgs" domainObjectName="Orgs">
+            <property name="useActualColumnNames" value="true"/>
+        </table>
+        <table tableName="orgTypes" domainObjectName="OrgTypes">
+            <property name="useActualColumnNames" value="true"/>
+        </table>
+        <table tableName="activities" domainObjectName="Activities">
+            <property name="useActualColumnNames" value="true"/>
+        </table>
+        <table tableName="activityTypes" domainObjectName="ActivityTypes">
+            <property name="useActualColumnNames" value="true"/>
+        </table>
+        <!--<table tableName="comments" domainObjectName="Comments">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="informations" domainObjectName="Informations">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+
+
+        <!--&lt;!&ndash;区域,省份,城市表&ndash;&gt;-->
+        <!--<table tableName="origins" domainObjectName="Origins">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="provinces" domainObjectName="Provinces">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="cities" domainObjectName="Cities">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+
+        <!--&lt;!&ndash;商品,订单,订单项,物流,物流项表&ndash;&gt;-->
+        <!--<table tableName="goods" domainObjectName="Goods">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="orders" domainObjectName="Orders">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="orderitems" domainObjectName="OrderItems">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="logistics" domainObjectName="Logistics">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="logisticsitems" domainObjectName="LogisticsItems">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+
+
+        <!--&lt;!&ndash;管理员表&ndash;&gt;-->
+        <!--<table tableName="managers" domainObjectName="Managers">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+        <!--&lt;!&ndash;通知表&ndash;&gt;-->
+        <!--<table tableName="notices" domainObjectName="Notices">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+
+        <!--<table tableName="advices" domainObjectName="Advices">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+
+    </context>
+</generatorConfiguration>

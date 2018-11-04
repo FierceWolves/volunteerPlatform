@@ -1,0 +1,116 @@
+.orgdetail-tripe{
+	margin:60px auto;
+	width:1190px;min-height:600px;
+	font-size:0px;
+}
+.orgdetail-orginfo{
+	display:inline-block;
+	position:relative;
+	width:390px;
+	border:1px solid #dcdddd;
+	border-radius:5px;
+	-moz-border-radius:5px; /* Old Firefox */
+	background:url(../images/personbg.png) no-repeat;
+}
+.orgdetail-orgdetail{
+	padding:190px 20px 76px;
+	font-size:14px;color:#999;
+}
+.orgdetail-orgmask{
+	position:absolute;
+	top:77px;left:25px;
+	width:100px;height:100px;
+	background-size:cover;
+	background-position:center;
+}
+.orgdetail-orgname{
+	position:absolute;
+	display:block;
+	top:154px;left:151px;
+	max-width:220px;
+	font-weight:400;font-size:18px;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	-webkit-text-overflow:ellipsis;
+}
+.orgdetail-btn{
+	position:absolute;
+	bottom:20px;left:50%;
+	margin-left:-170px;
+	width:340px;height:40px;
+	font-weight:400;text-align:center;line-height:40px;color:white;font-size:16px;
+	border-radius:5px;
+	-moz-border-radius:5px; /* Old Firefox */
+	background-color:#f5a623;
+	cursor:pointer;
+}
+.orgdetail-right{
+	display:inline-block;
+	margin-left:18px;
+	width:780px;
+	vertical-align:top;
+}
+.orgdetail-three{
+	display:inline-block;
+	margin-right:10px;
+	width:250px;height:140px;
+	font-size:14px;color:white;font-weight:400;text-align:center;
+	border-radius:5px;
+	-moz-border-radius:5px; /* Old Firefox */
+	vertical-align:top;
+}
+.orgdetail-three p{
+	padding:18px 0px;
+}
+.orgdetail-three h3{
+	font-size:24px ;
+}
+.hour{
+	background-color:#77d484;
+}
+.person{
+	background-color:#6acbb2;
+}
+.act{
+	background-color:#5ca3c9;
+}
+.orgdetail-h3{
+	margin-top:30px;
+	font-size:18px;font-weight:400;
+}
+.orgdetail-actitem-box{
+	margin-top:10px;
+	width:770px;height:99px;
+	border:1px solid #dcdddd;
+	border-radius:5px;
+	-moz-border-radius:5px; /* Old Firefox */
+}
+.orgdetail-actmask{
+	float:left;
+	margin-right:20px;
+	width:140px;height:99px;
+	background-size:cover;
+	background-position:center;
+}
+.orgdetail-actitem-box h3{
+	padding:17px 0px;
+	font-size:18px;font-weight:400;
+}
+.orgdetail-actitem-box-right{
+	float:right;
+	width:130px;height:99px;
+}
+.activity-item-other-join{
+	width:35px;
+}
+.activity-item-other-number{
+	width:35px;
+}
+.activity-item-other-number i{
+	background:url(../images/sprite.png) -218px -256px;
+}
+.orgdetail-actitem-box-right-p{
+	padding-top:60px;padding-right:20px;
+	font-size:14px;text-align:right;color:#999;
+}

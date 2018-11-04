@@ -1,0 +1,18 @@
+.activity-tripe{
+	margin:0 auto;
+	width:1190px;
+}
+.search-itemlist-box{
+	margin:20px 0px;
+	width:1188px;
+	border:1px solid #dcdddd;
+	border-radius:5px;
+	-moz-border-radius:5px; /* Old Firefox */
+	background-color:white;
+}
+.search-orderlist-box{
+	margin-bottom:20px;
+}
+.search-order-ullist{
+	
+}

@@ -1,0 +1,193 @@
+@CHARSET "UTF-8";
+body,
+html,
+div,
+a,
+img,
+p,
+span,
+ul,
+li,
+input {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #1470b9;
+	font-family: Heiti SC, Droidsansfallback, Dengxian, Helvetica, Segoe, "微软雅黑"
+}
+
+.box {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background: url(../images/bg.jpg)  no-repeat  center  bottom;
+	background-size: 100% auto;
+	min-width: 1000px;
+	min-height: 500px;
+}
+
+.main {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.logo {
+	width: 100%;
+	float: left;
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	color: #ee0015;
+	padding: 90px 0 0 0;
+	line-height: 60px;
+}
+
+.logo img {
+	height: 100px;
+	vertical-align: top;
+	margin-right: 8px;
+}
+
+.bottom {
+	position: absolute;
+	bottom: 10px;
+	font-size: 14px;
+	line-height: 18px;
+	color: #fff;
+	text-align: center;
+	left: 0;
+	right: 0;
+}
+
+.bottom a {
+	color: #fff;
+}
+
+.loginBox {
+	position: absolute;
+	width: 600px;
+	height: 100px;
+	left: 50%;
+	margin-left: -300px;
+	top: 50%;
+	margin-top: -50px;
+}
+
+.loginIn {
+	width: 558px;
+	border-radius: 6px;
+	float: left;
+	text-align: center;
+	border: 1px solid #afa7dc;
+	background: #f1f1f1;
+	box-shadow: 0 0 6px #afa7dc;
+	padding: 20px;
+}
+
+.inputBox {
+	width: 43%;
+	float: left;
+	text-align: left;
+	font-size: 14px;
+	line-height: 20px;
+	color: #666;
+}
+
+.inputBox input {
+	width: 200px;
+	height: 30px;
+	background: #fff;
+	border: 1px solid #ccc;
+	font-size: 14px;
+	padding: 0 4px;
+	border-radius: 4px;
+	line-height: 30px;
+	color: #000;
+	margin-top: 3px;
+}
+
+.btnBox {
+	width: 13%;
+	float: left;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.btnBox input {
+	width: 60px;
+	height: 30px;
+	background: #5ec16b;
+	border: 1px solid #4ca858;
+	font-size: 14px;
+	padding: 0 4px;
+	border-radius: 4px;
+	line-height: 30px;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+	margin-top: 3px;
+}
+
+.btnBox input:hover {
+	background: #4ca858;
+}
+
+.errorDiv {
+	color: #ff0000;
+	line-height: 30px;
+}
+
+.downLoad .img1 {
+	width: 150px;
+	padding: 5px;
+	position: fixed;
+	text-align: center;
+	right: 10px;
+	bottom: 10px;
+	background: #fff;
+	font-size: 12px;
+	color: #999;
+	line-height: 20px;
+	border-radius: 4px;
+}
+
+.downLoad .img1 {
+	width: 150px;
+	height: 150px;
+}
+
+.downLoad .img2 {
+	width: 150px;
+	padding: 5px;
+	position: fixed;
+	text-align: center;
+	left: 10px;
+	bottom: 10px;
+	background: #fff;
+	font-size: 12px;
+	color: #999;
+	line-height: 20px;
+	border-radius: 4px;
+}
+
+.downLoad .img2 {
+	width: 150px;
+	height: 150px;
+}
+
+.btn {
+	width: 13%;
+	float: left;
+	font-size: 14px;
+	line-height: 20px;
+	margin-top: 10px;
+}
+
+.btn a {
+	color: #999;
+	text-decoration: none;
+}

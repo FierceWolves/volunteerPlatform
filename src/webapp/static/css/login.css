@@ -1,0 +1,142 @@
+.login-tripe-box {
+	width: 100%;
+	height: 638px;
+	background-image: url(../images/login_bg.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.login-tripe {
+	margin: 0px auto;
+	padding-top: 80px;
+	width: 1190px;
+	height: 558px;
+}
+
+.login-left {
+	float: left;
+	padding: 5px;
+}
+
+.login-left h1 {
+	width: 550px;
+	color: white;
+}
+
+.login-left h1 a {
+	padding: 10px;
+	width: 220px;
+	height: 28px;
+	font-size: 14px;
+	font-weight: 400;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	/* Old Firefox */
+	background-color: #f8b62d;
+	cursor: pointer;
+}
+
+.login-left p {
+	padding: 15px 0px;
+	width: 580px;
+	color: white;
+	line-height: 25px;
+	font-size: 14px;
+}
+
+.login-right {
+	float: right;
+	padding: 40px 25px;
+	width: 430px;
+	height: 270px;
+	text-align: center;
+	background-color: #f1f1f1;
+}
+
+.login-right h2 {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.login-right h2 span {
+	color: #2d974d;
+}
+
+.login-input {
+	margin-top: 20px;
+	padding-left: 10px;
+	width: 360px;
+	height: 30px;
+	border: none;
+	outline: none;
+}
+
+.input-label {
+	padding: 6.5px 15px;
+	background-color: black;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.number-label {
+	background: url(../images/sprite.png) -110px -260px;
+}
+
+.password-label {
+	background: url(../images/sprite.png) -70px -259px;
+}
+
+.code-label {
+	background: url(../images/code.png);
+	background-size: 30px 30px;
+}
+
+.check-box {
+	padding: 20px 15px;
+	text-align: left;
+	font-size: 14px;
+	color: #999;
+}
+
+.check-box span {
+	float: right;
+}
+
+.check-box span a {
+	color: #999;
+}
+
+.login-submit {
+	margin: 0px auto;
+	height: 35px;
+	width: 270px;
+	text-align: center;
+	line-height: 35px;
+	color: white;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	/* Old Firefox */
+	background-color: #5ec16b;
+	cursor: pointer;
+}
+
+.login-submit:hover {
+	background-color: #2f913c;
+}
+
+.org-login {
+	float: left;
+	margin-top: 40px;
+	margin-left: -25px;
+	height: 60px;
+	width: 480px;
+	line-height: 60px;
+	color: white;
+	font-size: 18px;
+	background-color: #545454;
+	cursor: pointer;
+}
+
+.org-login:hover {
+	color: #ff0000;
+}

@@ -1,0 +1,74 @@
+.userlayout-tripe {
+	margin: 30px auto 80px;
+	padding-top: 5px;
+	width: 1190px;
+	min-height: 530px;
+	font-size: 0px;
+	background-color: white;
+}
+
+.userlayout-left {
+	display: inline-block;
+	width: 290px;
+	min-height: 500px;
+	border: 1px solid #efefef;
+	border-bottom: none;
+	vertical-align: top;
+}
+
+.userlayout-itemlist-a {
+	display: block;
+	padding: 17px 30px;
+	width: 230px;
+	height: 16px;
+	font-size: 16px;
+	line-height: 16px;
+	color: #333;
+	cursor: pointer;
+}
+
+.userlayout-itemlist:hover a,
+.userlayout-itemlist-a-active {
+	padding-left: 23px;
+	border-left: 7px solid #5ec16b;
+	color: #5ec16b;
+}
+
+.userlayout-itemlist {
+	border-bottom: 1px solid #efefef;
+}
+
+.userlayout-itemlist li {
+	display: block;
+	padding: 5px 0px;
+	padding-left: 40px;
+	width: 230px;
+	height: 25px;
+	font-size: 14px;
+	color: #999;
+	cursor: pointer;
+}
+
+.userlayout-itemlist li:hover,
+.userlayout-itemlist-activity {
+	color: #5ec16b!important;
+}
+
+.userlayout-right {
+	display: inline-block;
+	margin-left: 18px;
+	width: 880px;
+}
+
+.userlayout-right-p {
+	padding: 5px 0px;
+	color: #333;
+	font-size: 14px;
+}
+
+.next-form-item-help {
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #ff3000;
+}

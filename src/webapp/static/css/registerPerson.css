@@ -1,0 +1,84 @@
+.registerperson-tripe {
+	margin: 0px auto 20px;
+	width: 1190px;
+	display: none;
+}
+
+.tripe2 {
+	padding: 20px;
+	padding-top: 1px;
+	width: 1170px;
+	background-color: #f1f1f1;
+}
+
+.register-noeighteen-box {
+	padding: 5px 30px;
+	margin: 20px 0px;
+	width: 1110px;
+	background-color: #e7e7e7;
+}
+
+.register-noeighteen-box label {
+	width: 158px !important;
+}
+
+.tripe2 label {
+	display: inline-block;
+	font-size: 14px;
+	color: #999;
+	line-height: 32px;
+}
+
+.tripe2-label {
+	margin: 10px 0px;
+	padding: 5px;
+	width: 188px;
+	height: 32px;
+}
+
+.tripe2-label span {
+	color: red;
+}
+
+.tripe2 input[type=text] {
+	margin: 10px 0px;
+	padding: 0px 10px;
+	width: 280px;
+	height: 30px;
+	border: 1px solid #e7e7e7;
+	outline: 0;
+	font-size: 12px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	/* Old Firefox */
+	background-color: white;
+}
+
+.tripe2 input[type=text]:hover {
+	border: 1px solid #b7d3f3;
+}
+
+.tripe2 input[type=text]:focus {
+	box-shadow: 0px 0px 5px #b7d3f3;
+}
+
+select {
+	margin: 10px 0px;
+}
+
+.search-order-ullist {
+	position: relative;
+	top: -10px;
+}
+
+.label-list {
+	padding-right: 5px;
+	min-width: 50px;
+	height: 32px;
+}
+
+.tripe-span {
+	font-size: 14px;
+	color: #f8b62d;
+	line-height: 32px;
+}

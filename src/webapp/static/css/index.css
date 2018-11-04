@@ -1,0 +1,131 @@
+.index-tripe {
+	margin: 0px auto;
+	width: 1190px;
+}
+
+.index-banner-box {
+	position: relative;
+	width: 100%;
+	height: 400px;
+}
+
+.index-banner-img-box {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.index-banner-img-box img {
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+.index-banner-btn-box {
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+	height: 15px;
+	text-align: center;
+	cursor: default;
+}
+
+.index-banner-btn-box div {
+	display: inline-block;
+	margin: 0px 2px;
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	/*OldFirefox*/
+	background-color: #a0a0a0;
+	cursor: pointer;
+}
+
+.index-banner-btn-active,
+.index-banner-btn-box div:hover {
+	background-color: #b7d3f3!important;
+}
+
+.index-model {
+	position: relative;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.index-model-p,
+.index-model-h3 {
+	display: inline-block;
+}
+
+.index-model-h3 {
+	padding: 15px 0px;
+	padding-right: 20px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.index-model-p a {
+	margin: 0px 10px;
+	font-size: 14px;
+	color: #999;
+}
+
+.index-model-p a:hover {
+	color: #5ec16b;
+}
+
+.more {
+	position: absolute;
+	right: 0px;
+	top: 20px;
+}
+
+.org-itemlist-box {
+	margin-left: -10px;
+	width: 1200px;
+	font-size: 0px;
+}
+
+.org-item-box {
+	position: relative;
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: -6px;
+	margin-bottom: 20px;
+	width: 123.33px;
+	height: 123.33px;
+	font-size: 14px;
+	text-align: center;
+	background-size: cover;
+}
+
+.org-item-box-img {
+	width: 123.33px;
+	height: 123.33px;
+}
+
+.org-item-box:hover a {
+	zoom: 1;
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+}
+
+.org-item-box-a {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 20px;
+	height: 83px;
+	width: 83px;
+	font-size: 14px;
+	line-height: 20px;
+	color: white!important;
+	background-color: rgba(0, 0, 0, .5)!important;
+}
